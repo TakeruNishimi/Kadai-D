@@ -16,8 +16,10 @@ class SemanticVersion:
         return self.version
 
     def patch_version_up(self):
-        self.patch += 1
-        return SemanticVersion(self.major, self.minor, self.patch)
+        patch = self.patch + 1
+        return SemanticVersion(self.major, self.minor, patch)
+
+
 
 
 def main():
